@@ -47,9 +47,11 @@ d3.tsv('data/demo.tsv', (error, data) => {
 
 For successful build:
 
-npm uninstall webpack --save-dev
+```
+$ npm uninstall webpack --save-dev
 &
-npm install webpack@2.1.0-beta.22 --save-dev
+$ npm install webpack@2.1.0-beta.22 --save-dev
+```
 
 Install dependencies via npm or yarn
 
