@@ -1,6 +1,6 @@
 id	text	count
-29845	Velar  SE   S/C  R-Dynamic	74
-29846	Velar  HSE   S/C  R-Dynamic	71
+29845	Velar  SE   S-C  R-Dynamic	74
+29846	Velar  HSE   S-C  R-Dynamic	71
 27549	Range_Rover_Sport  HSE  Dynamic  SDV8	63
 29847	Range_Rover_Sport  HSE  Dynamic  Si4  Pnev	62
 5270	Range_Rover_Evoque  SE  Dynamic	59
@@ -14,7 +14,7 @@ id	text	count
 26528	Range_Rover_Evoque  SE  Dynamic	59
 26534	Range_Rover_Evoque  SE  Dynamic	59
 26592	Velar  SE  R-Dynamic	59
-29848	Range_Rover  SE  Vogue  S/C	57
+29848	Range_Rover  SE  Vogue  S-C	57
 29272	Range_Rover  SE  L  Vogue	57
 29273	Range_Rover  SE  Vogue  SDV8	56
 27555	Range_Rover_Sport  HSE  Dynamic	56
@@ -31,8 +31,8 @@ id	text	count
 20507	Range_Rover_Evoque  HSE  Dynamic	56
 29274	Range_Rover  SE  Vogue  Si4	54
 29275	Range_Rover  SE  Vogue  TDV6	54
-29844	Velar  S   S/C  R-Dynamic	54
-29842	Velar  SE   S/C	52
+29844	Velar  S   S-C  R-Dynamic	54
+29842	Velar  SE   S-C	52
 29277	Range_Rover  SE  Vogue  Supercharged	51
 29278	Range_Rover  SE  Vogue	49
 26023	F-Type  R-Dynamic  F-Type	45
@@ -64,7 +64,7 @@ id	text	count
 26213	Velar  S  R-Dynamic	39
 26207	Velar  SE 	39
 26208	Velar  S  R-Dynamic	39
-29843	Velar   S/C  R-Dynamic  Base	39
+29843	Velar   S-C  R-Dynamic  Base	39
 29260	Range_Rover  HSE  TDV6	39
 27546	Range_Rover_Sport  HSE  TDV6	39
 26210	Velar  SE 	38
@@ -107,7 +107,7 @@ id	text	count
 29253	Range_Rover  Dynamic  Autobiography	33
 27556	Range_Rover_Sport  Dynamic  Autobiography	33
 27558	Range_Rover_Sport  Dynamic  Autobiography	33
-29841	Velar  S   S/C	32
+29841	Velar  S   S-C	32
 29256	Range_Rover  L  SDV8  Autobiography	26
 29849	Range_Rover  L  Si4  Autobiography  PHEV	25
 25058	F-Type  F-Type  SVR	23
@@ -138,7 +138,7 @@ id	text	count
 29860	XF  Sport  300  R-Sport	18
 29837	Velar  S	17
 29262	Range_Rover  L  SDV8  SVAutobiography	17
-29840	Velar   S/C  Base	17
+29840	Velar   S-C  Base	17
 27553	Range_Rover_Sport  S	17
 26584	Velar  S	17
 26586	Velar  S	17
