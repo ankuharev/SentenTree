@@ -45,7 +45,7 @@ id	text	count
 26035	F-Type  R-Dynamic  #F-Type#	45
 27552	Range_Rover_Sport  SE  Si4	42
 27545	Range_Rover_Sport  SE  TDV6	42
-27550	Range_Rover_Sport  Dynamic  SDV8  Autobiography	40
+27550	Range_Rover_Sport  Dynamic  Autobiography  SDV8	40
 28855	E-Pace  S  R-Dynamic	40
 26544	Discovery_Sport  HSE  Luxury	40
 26546	Discovery_Sport  HSE  Luxury	40
@@ -108,8 +108,8 @@ id	text	count
 27558	Range_Rover_Sport  Dynamic  Autobiography	33
 27556	Range_Rover_Sport  Dynamic  Autobiography	33
 29841	Velar  S   S-C	32
-29256	Range_Rover  #L#  SDV8  Autobiography	26
-29849	Range_Rover  #L#  Si4  Autobiography  PHEV	25
+29256	Range_Rover  #L#  Autobiography  SDV8	26
+29849	Range_Rover  #L#  Autobiography  Si4  PHEV	25
 25058	F-Type  #F-Type#  SVR	23
 26030	F-Type  #F-Type#  SVR	23
 26165	Velar  R-Dynamic	22
@@ -134,7 +134,7 @@ id	text	count
 26206	Velar  S 	19
 29267	Range_Rover  Vogue  SDV8	19
 29254	Range_Rover  #L#  Autobiography	19
-29255	Range_Rover  SDV8  Autobiography	18
+29255	Range_Rover  Autobiography  SDV8	18
 29262	Range_Rover  #L#  SDV8  SVAutobiography	17
 29837	Velar  S	17
 29840	Velar   S-C  Base	17
@@ -155,7 +155,7 @@ id	text	count
 29866	E-Pace  S	15
 29565	I-Pace  S	15
 28868	E-Pace  S	15
-29860	XF  #Sport#  #R-Sport# 	14
+29860	XF   #Sport#  R-Sport	14
 26687	XJ  #L#  Portfolio	13
 26684	XJ  #L#  Luxury	13
 29263	Range_Rover  Vogue	12
@@ -169,17 +169,17 @@ id	text	count
 28854	E-Pace  SE	11
 28859	E-Pace  SE	11
 26531	Range_Rover_Evoque  Autobiography	11
-26628	XE  #R-Sport#	10
-26629	F-Pace  #R-Sport#	10
-26683	XJ  #R-Sport#	10
+26628	XE  R-Sport	10
+26629	F-Pace  R-Sport	10
+26683	XJ  R-Sport	10
 26688	XJ  #L#  Autobiography	10
 26689	XJ  #L#  Autobiography	10
-27364	XF  #R-Sport#	10
-26195	F-Pace  #R-Sport#	10
-20500	XE  #R-Sport#	10
-29855	XE  #R-Sport#	10
-29859	XF  #R-Sport#	10
-29863	F-Pace  #R-Sport#	10
+27364	XF  R-Sport	10
+26195	F-Pace  R-Sport	10
+20500	XE  R-Sport	10
+29855	XE  R-Sport	10
+29859	XF  R-Sport	10
+29863	F-Pace  R-Sport	10
 29261	Range_Rover  #L#  SVAutobiography	10
 28870	E-Pace  HSE	9
 29567	I-Pace  HSE	9
@@ -187,12 +187,12 @@ id	text	count
 28860	E-Pace  HSE	9
 26680	XJ  Luxury  Premium	8
 28771	Range_Rover_Evoque  Edition  Special	6
-25267	F-Pace  #Prestige#	6
-20489	XF  #Prestige#	6
-26190	XF  #Prestige#	6
-26194	F-Pace  #Prestige#	6
-29862	F-Pace  #Prestige#	6
-29858	XF  #Prestige#	6
+25267	F-Pace  Prestige	6
+20489	XF  Prestige	6
+26190	XF  Prestige	6
+26194	F-Pace  Prestige	6
+29862	F-Pace  Prestige	6
+29858	XF  Prestige	6
 29835	Discovery_Sport  Edition  Special	6
 29836	Range_Rover_Evoque  Edition  Special	6
 29856	XE  Edition  #Landmark#	5
@@ -202,20 +202,20 @@ id	text	count
 26682	XJ  Portfolio	5
 26630	F-Pace  Portfolio	5
 26679	XJ  Luxury	5
-28851	E-Pace  #Standard#	4
-28852	E-Pace  #Standard#	4
-28857	E-Pace  #Standard#	4
-29857	XE  #Sport# 	4
-29865	E-Pace  #Standard#	4
+28851	E-Pace  Standard	4
+28852	E-Pace  Standard	4
+28857	E-Pace  Standard	4
+29857	XE   #Sport#	4
+29865	E-Pace  Standard	4
 29568	I-Pace  Edition  First	4
 29864	F-Pace  SVR	3
 29852	XJ  #XJ50#	3
-26539	Discovery_Sport  #Pure#	3
-20192	Discovery_Sport  #Pure#	3
-5261	Range_Rover_Evoque  #Pure#	3
-25266	F-Pace  #Pure#	2
+26539	Discovery_Sport  Pure	3
+20192	Discovery_Sport  Pure	3
+5261	Range_Rover_Evoque  Pure	3
+25266	F-Pace  Pure	2
 29850	Range_Rover  #SV#  Coupe	2
-29861	F-Pace  #Pure#	2
+29861	F-Pace  Pure	2
 29838	Velar 	1
 26153	Velar 	1
 26161	Velar 	1
