@@ -97,9 +97,9 @@ id	text	count
 5270	Range_Rover_Evoque SE Dynamic	10
 5271	Range_Rover_Evoque SE Dynamic	10
 5272	Range_Rover_Evoque SE Dynamic	10
-25058	F-Type F-Type SVR 	10
-25821	Discovery_ HSE Luxury	10
-25816	Discovery_ HSE Luxury	10
+25058	F-Type F-Type SVR	10
+25821	Discovery HSE Luxury	10
+25816	Discovery HSE Luxury	10
 26030	F-Type F-Type SVR	10
 26526	Range_Rover_Evoque SE Dynamic	10
 26528	Range_Rover_Evoque SE Dynamic	10
@@ -118,7 +118,7 @@ id	text	count
 26194	F-Pace Prestige	8
 25267	F-Pace Prestige	8
 20489	XF Prestige	8
-4120	F-Type F-Type R 	8
+4120	F-Type F-Type R	8
 4121	F-Type F-Type R	8
 26684	XJ Luxury L	8
 28851	E-Pace Standard	8
@@ -193,15 +193,15 @@ id	text	count
 26545	Discovery_Sport HSE	3
 26541	Discovery_Sport HSE	3
 26523	Range_Rover_Evoque HSE	3
-25820	Discovery_ HSE	3
-25815	Discovery_ HSE	3
+25820	Discovery HSE	3
+25815	Discovery HSE	3
 5163	Discovery_Sport HSE	3
 5225	Range_Rover_Evoque HSE	3
 5165	Discovery_Sport SE	2
 5275	Range_Rover_Evoque SE	2
 5276	Range_Rover_Evoque SE	2
-25819	Discovery_ SE	2
-25814	Discovery_ SE	2
+25819	Discovery SE	2
+25814	Discovery SE	2
 25549	Range_Rover_Evoque SE	2
 26542	Discovery_Sport SE	2
 26540	Discovery_Sport SE	2
@@ -216,9 +216,9 @@ id	text	count
 28868	E-Pace S	1
 28858	E-Pace S	1
 28853	E-Pace S	1
-25813	Discovery_ S	1
+25813	Discovery S	1
 25268	F-Pace S	1
-25818	Discovery_ S	1
+25818	Discovery S	1
 20497	XF S	1
 26186	XE S	1
 26200	F-Pace S	1
