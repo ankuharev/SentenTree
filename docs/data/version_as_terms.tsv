@@ -1,208 +1,2566 @@
 id	text	count
-KIA2S6K4617D216	ceed Classic 1.4 6MT	10
-KIA2S6K4617DABD	ceed Classic AC 1.4 6MT	10
-KIJ7S6D261FS175	Ceed Comfort 1.6 6AT	10
-KIA2S6D261FDB62	ceed Comfort 1.6 6AT	10
-KIJ7S6D2617S174	Ceed Comfort 1.6 6MT	10
-KIA2S6D2617DB62	ceed Comfort 1.6 6MT	10
-KIA2S6D2G17A434	ceed GT 1.6 6MT	10
-KIJ7S6K4G1UD741	Ceed Luxe 1.4 T-GDI 7DCT	10
-KIJ7S6D261FD741	Ceed Luxe 1.6 6AT	10
-KIJ7S6D2617D798	Ceed Luxe 1.6 6MT	10
-KIJ7S6K4G1UD689	Ceed Premium 1.4 T-GDI 7DCT	10
-KIA2S6D2A1TGQDG	ceed Premium 1.6 6DCT	10
-KIA2S6D2A1TGSR1	ceed Premium 1.6 6DCT	10
-KIJ7S6K4G1UD276	Ceed Premium+ 1.4 T-GDI 7DCT	10
-KIJ7S6K4G1UD687	Ceed Prestige 1.4 T-GDI 7DCT	10
-KIJ7S6D261FD687	Ceed Prestige 1.6 6AT	10
-KIA2W5K4617DABD	ceed_sw Classic 1.4 6MT	10
-KIA2W5D261FDB63	ceed_sw Comfort 1.6 6AT	10
-KIA2W5D261FGSLV	ceed_sw Luxe 1.6 6AT	10
-KIA2W5D2A1TGSJA	ceed_sw Premium 1.6 6DCT	10
-KIA2W5D2A1TGSJ9	ceed_sw Prestige 1.6 6DCT	10
-KIDJS4D261FD179	Cerato Comfort 1.6 6AT	10
-KIDJS4D261FD180	Cerato Comfort 1.6 6AT	10
-KIDJS4D2617D179	Cerato Comfort 1.6 6MT	10
-KIDJS42G61FD177	Cerato Comfort 2.0 6AT	10
-KIDJS4D261FG326	Cerato Luxe 1.6 6AT	10
-KIDJS4D2617G323	Cerato Luxe 1.6 6MT	10
-KIDJS42G61FG321	Cerato Luxe 2.0 6AT	10
-KIDJS42G61FG319	Cerato Premium 2.0 6AT	10
-KIDJS42G61FG320	Cerato Premium+ 2.0 6AT	10
-KIDJS42G61FG256	Cerato Premium+ 2.0 6AT	10
-KIDJS4D261FG328	Cerato Prestige 1.6 6AT	10
-KIDJS42G61FG327	Cerato Prestige 2.0 6AT	10
-KIA7S4D261FDAH7	Cerato_Classic Comfort 1.6 6AT	10
-KIA7S4D2617DAH7	Cerato_Classic Comfort 1.6 6MT	10
-KIA7S4D261FGBRZ	Cerato_Classic Luxe 1.6 6AT	10
-KIA7S42G61FGBRZ	Cerato_Classic Luxe 2.0 6AT	10
-KIA7S42G61FHAG2	Cerato_Classic Premium 2.0 6AT	10
-KIA7S4D261FGBS0	Cerato_Classic Prestige 1.6 6AT	10
-KIA7S42G61FGBS1	Cerato_Classic Prestige 2.0 6AT	10
-KIENW79CC5KGNNS	Mohave Comfort 3.0d 8AT	10
-KIENW79CC5KGNMS	Mohave Luxe 3.0d 8AT	10
-KIENW79CC5KGNLN	Mohave Premium 3.0d 8AT	10
-KIENW79CC5KGNLP	Mohave Premium 3.0d 8AT	10
-KID4S42G617D456	Optima Classic 2.0 6MT	10
-KID4S42G61FD771	Optima Comfort 2.0 6AT	10
-KID4S4L5G1FK110	Optima GT 2.0 6AT	10
-KID4S4L5G1FK208	Optima GT 2.0T 6AT	10
-KID4S4L5G1FK213	Optima GT 2.0T 6AT	10
-KID4S4L6A1FH806	Optima GT-line 2.4 6AT	10
-KID4S4L6A1FHA18	Optima GT-line 2.4 6AT	10
-KID4S4L6A1FHA19	Optima GT-line 2.4 6AT	10
-KID4S42G61FGBGK	Optima Luxe 2.0 6AT	10
-KID4S4L6A1FGARA	Optima Luxe 2.4 6AT	10
-KID4S4L6A1FGBGK	Optima Luxe 2.4 6AT	10
-KID4S42G61FGBH5	Optima Premium 2.0 6AT	10
-KID4S42G61FGBGL	Optima Prestige 2.0 6AT	10
-KID4S4L6A1FGARB	Optima Prestige 2.4 6AT	10
-KIG6S6K2615D097	Picanto_5dr Classic 1.0 5MT	10
-KIG6S6K361BD098	Picanto_5dr Classic 1.2 4AT	10
-KIG6S6K2615GANT	Picanto_5dr Comfort 1.0 5MT	10
-KIG6S6K361BGANU	Picanto_5dr Comfort 1.2 4AT	10
-KIG6S6K361BGCGN	Picanto_5dr GT-line 1.2 4AT	10
-KIG6S6K361BGARF	Picanto_5dr Luxe 1.2 4AT	10
-KIG6S6K361BGCSK	Picanto_5dr New Prestige 1.2 4AT	10
-KIG6S6K361BGCSJ	Picanto_5dr X-Line 1.2 4AT	10
-KIA2S2D2G17A437	pro_ceed GT 1.6 6MT	10
-KIA2S2D2A1TGSJC	pro_ceed Premium 1.6 6DCT	10
-KIA2S2D2A1TGSJB	pro_ceed Prestige 1.6 6DCT	10
-KIDHS4J6A1JH292	Quoris Premium 3.8 8AT	10
-KIDHS4J6A1JH293	Quoris Premium 3.8 8AT	10
-KIDHS4T3A1JH292	Quoris Premium 5.0 8AT	10
-KIDHS4T3A1JH293	Quoris Premium 5.0 8AT	10
-KIH0S4K4617D055	Rio Classic 1.4 6MT	10
-KIH0S4K4617D113	Rio Classic 1.4 6MT	10
-KIH0S4K4617D132	Rio Classic 1.4 6MT	10
-KIH0S4K4617D133	Rio Classic Audio 1.4 6MT	10
-KIH0S4K4617D053	Rio Classic Audio 1.4 6MT	10
-KIH0S4K461FD111	Rio Comfort 1.4 6AT	10
-KIH0S4K461FD130	Rio Comfort 1.4 6AT	10
-KIH0S4K4617D128	Rio Comfort 1.4 6MT	10
-KIH0S4K4617D057	Rio Comfort 1.4 6MT	10
-KIH0S4D261FD130	Rio Comfort 1.6 6AT	10
-KIH0S4D2617D057	Rio Comfort 1.6 6MT	10
-KIH0S4D2617D128	Rio Comfort 1.6 6MT	10
-KIH0S4D261FD131	Rio Luxe 1.6 6AT	10
-KIH0S4D261FD112	Rio Luxe 1.6 6AT	10
-KIH0S4D2617D129	Rio Luxe 1.6 6MT	10
-KIH0S4D261FD147	Rio Luxe RED Line 1.6 6AT	10
-KIH0S4D2617D146	Rio Luxe RED Line 1.6 6MT	10
-KIH0S4D261FG066	Rio Premium 1.6 6AT	10
-KIH0S4D261FG104	Rio Premium 1.6 6AT	10
-KIH0S4D261FG078	Rio Premium 1.6 6AT	10
-KIH0S4D261FG103	Rio Prestige 1.6 6AT	10
-KIH0S4D2617G102	Rio Prestige 1.6 6MT	10
-KIH0S4D261FG076	Rio Prestige AV 1.6 6AT	10
-KIH0S4D261FG064	Rio Prestige AV 1.6 6AT	10
-KIH0S4D2617G063	Rio Prestige AV 1.6 6MT	10
-KIH0S4D2617G075	Rio Prestige AV 1.6 6MT	10
-KIH0S6K461FD117	Rio_X-Line Comfort 1.4 6AT	10
-KIH0S6K461FD135	Rio_X-Line Comfort 1.4 6AT	10
-KIH0S6K4617D134	Rio_X-Line Comfort 1.4 6MT	10
-KIH0S6D261FD135	Rio_X-Line Comfort 1.6 6AT	10
-KIH0S6D2617D134	Rio_X-Line Comfort 1.6 6MT	10
-KIH0S6D261FD131	Rio_X-Line Luxe 1.6 6AT	10
-KIH0S6D2617D129	Rio_X-Line Luxe 1.6 6MT	10
-KIH0S6D261FD147	Rio_X-Line Luxe RED Line 1.6 6AT	10
-KIH0S6D2617D146	Rio_X-Line Luxe RED Line 1.6 6MT	10
-KIH0S6D261FG106	Rio_X-Line Premium 1.6 6AT	10
-KIH0S6D261FG080	Rio_X-Line Premium 1.6 6AT	10
-KIH0S6D261FG103	Rio_X-Line Prestige 1.6 6AT	10
-KIGMW5L661FM007	Sorento Classic 2.4 6AT	10
-KIGMW5L661GM007	Sorento Classic 2.4 6AT 4X4	10
-KIGMW5L6618M007	Sorento Classic 2.4 6MT 4X4	10
-KIGMW5L661GM008	Sorento Comfort 2.4 6AT 4X4	10
-KIGMW52FC5GGZZT	Sorento Luxe 2.2d 6AT 4X4	10
-KIGMW5L661GGZZT	Sorento Luxe 2.4 6AT 4X4	10
-KIGMW52FC5GM005	Sorento Prestige 2.2d 6AT 4X4	10
-KIGMW5L661GM005	Sorento Prestige 2.4 6AT 4X4	10
-KIC5W5L6A1FGDLB	Sorento_Prime Classic 2.4 6AT	10
-KIC5W5L6A1GGCPF	Sorento_Prime Comfort 2.4 6AT 4X4	10
-KIC5W52FC5KGDVT	Sorento_Prime GT Line 2.2d 8AT 4X4	10
-KIC5W52FC5KGCPM	Sorento_Prime GT Line 2.2d 8AT 4X4	10
-KIC5W5J461KGCPM	Sorento_Prime GT Line 3.5 8AT 4X4	10
-KIC5W5J461KGDVT	Sorento_Prime GT Line 3.5 8AT 4X4	10
-KIC5W52FC5KGDB5	Sorento_Prime Luxe 2.2d 8AT 4X4	10
-KIC5W5L6A1GGDB5	Sorento_Prime Luxe 2.4 6AT 4X4	10
-KIC5W72FC5GGBJT	Sorento_Prime Premium 2.2d 6AT 4X4	10
-KIC5W72FC5KGCPJ	Sorento_Prime Premium 2.2d 8AT 4X4	10
-KIC5W72FC5KGCPK	Sorento_Prime Premium 2.2d 8AT 4X4	10
-KIC5W72FC5KGCPL	Sorento_Prime Premium 2.2d 8AT 4X4	10
-KIC5W72FC5KGDVQ	Sorento_Prime Premium 2.2d 8AT 4X4	10
-KIC5W72FC5KGDVR	Sorento_Prime Premium 2.2d 8AT 4X4	10
-KIC5W72FC5KGDVS	Sorento_Prime Premium 2.2d 8AT 4X4	10
-KIC5W7J461KGCPK	Sorento_Prime Premium 3.5 8AT 4X4	10
-KIC5W7J461KGDVR	Sorento_Prime Premium 3.5 8AT 4X4	10
-KIC5W72FC5KGDVN	Sorento_Prime Prestige 2.2d 8AT 4X4	10
-KIC5W72FC5KGDVP	Sorento_Prime Prestige 2.2d 8AT 4X4	10
-KIC5W7L6A1GGDVN	Sorento_Prime Prestige 2.4 6AT 4X4	10
-KIC5W7J461KGDVN	Sorento_Prime Prestige 3.5 8AT 4X4	10
-KIC5W7J461KGCPG	Sorento_Prime Prestige 3.5 8AT 4X4	10
-KIB2W5D261FD395	Soul Classic 1.6 6AT	10
-KIB2W5D2617D394	Soul Classic 1.6 6MT	10
-KIB2W5D261FGAHK	Soul Comfort 1.6 6AT	10
-KIB2W5D261FGBJG	Soul Comfort 1.6 6AT	10
-KIB2W5D2617GBJG	Soul Comfort 1.6 6MT	10
-KIB2W5D261FGBS5	Soul Comfort RED Line 1.6 6AT	10
-KIB2W5D2G1UH263	Soul GT 1.6 7DCT	10
-KIB2W5D2A1FGBJH	Soul Luxe 1.6 6AT	10
-KIB2W52G61FGBLP	Soul Luxe 2.0 6AT	10
-KIB2W52G61FGBVQ	Soul Luxe RED Line 2.0 6AT	10
-KIB2W5D2A1FGBJK	Soul Premium 1.6 6AT	10
-KIB2W52G61FGBJF	Soul Premium 2.0 6AT	10
-KIB2W5D2A1FGBJJ	Soul Prestige 1.6 6AT	10
-KIB2W52G61FGBLQ	Soul Prestige 2.0 6AT	10
-KIF1W52G61FDAWF	Sportage Classic Теплые опции 2.0 6AT	10
-KIF1W52G617DAWE	Sportage Classic Теплые опции 2.0 6MT	10
-KIF1W52G618DAWE	Sportage Classic Теплые опции 2.0 6MT AWD	10
-KIF1W52G61FDAN6	Sportage Classic 2.0 6AT	10
-KIF1W52G617DA24	Sportage Classic 2.0 6MT	10
-KIF1W52G617DAN5	Sportage Classic 2.0 6MT	10
-KIF1W52G618DAN5	Sportage Classic 2.0 6MT AWD	10
-KIF1W52G61FGDRM	Sportage Comfort 2.0 6AT	10
-KIF1W52G61FGEOC	Sportage Comfort 2.0 6AT	10
-KIF1W52G61GGEOC	Sportage Comfort 2.0 6AT AWD	10
-KIF1W52G61GGDRM	Sportage Comfort 2.0 6AT AWD	10
-KIF1W52G617GDRL	Sportage Comfort 2.0 6MT	10
-KIF1W52G617GEOB	Sportage Comfort 2.0 6MT	10
-KIF1W52G618GEOB	Sportage Comfort 2.0 6MT AWD	10
-KIF1W52G618GDRL	Sportage Comfort 2.0 6MT AWD	10
-KIF1W5D2G1XHBB5	Sportage GT Line 1.6 T-GDI 7DCT AWD	10
-KIF1W52G61GHBB6	Sportage GT Line 2.0 6AT AWD	10
-KIF1W52EC5GHBB5	Sportage GT Line 2.0D 6AT AWD	10
-KIF1W5L6A1GHBOC	Sportage GT Line 2.4 6AT AWD	10
-KIF1W5D2G1XH461	Sportage GT-Line Premium 1.6 T-GDI 7DCT AWD	10
-KIF1W5D2G1XHAB6	Sportage GT-Line Premium 1.6 T-GDI 7DCT AWD	10
-KIF1W52G61FGELL	Sportage Luxe 2.0 6AT	10
-KIF1W52G61FGDRF	Sportage Luxe 2.0 6AT	10
-KIF1W52G61GGDRF	Sportage Luxe 2.0 6AT AWD	10
-KIF1W52G618GELU	Sportage Luxe 2.0 6MT AWD	10
-KIF1W52G618GDRE	Sportage Luxe 2.0 6MT AWD	10
-KIF1W5L6A1GGERY	Sportage Luxe 2.4 6AT AWD	10
-KIF1W52G61GGBHJ	Sportage Premium 2.0 6AT AWD	10
-KIF1W52G61GGCXV	Sportage Premium 2.0 6AT AWD	10
-KIF1W52EC5GGCXV	Sportage Premium 2.0D 6AT AWD	10
-KIF1W52EC5KGEMQ	Sportage Premium 2.0D 8AT AWD	10
-KIF1W5L6A1GGEMR	Sportage Premium 2.4 6AT AWD	10
-KIF1W52G61FGDRG	Sportage Prestige 2.0 6AT	10
-KIF1W52G61FGELM	Sportage Prestige 2.0 6AT	10
-KIF1W52G61GGELM	Sportage Prestige 2.0 6AT AWD	10
-KIF1W52G61GGDRG	Sportage Prestige 2.0 6AT AWD	10
-KIF1W5L6A1GGEMS	Sportage Prestige 2.4 6AT AWD	10
-KIJ5S6L8G1JD389	Stinger Comfort 2.0 197hp 8AT	10
-KIJ5S6L8G1JD000	Stinger Comfort 2.0 247hp 8AT	10
-KIJ5S6L8G1JD384	Stinger Comfort 2.0 247hp 8AT	10
-KIJ5S6J5G1KH352	Stinger GT 3.3 8AT AWD	10
-KIJ5S6J5G1KH353	Stinger GT 3.3 8AT AWD	10
-KIJ5S6J5G1KH354	Stinger GT 3.3 8AT AWD	10
-KIJ5S6L8G1KG600	Stinger GT Line 2.0 247hp 8AT AWD	10
-KIJ5S6L8G1KG601	Stinger GT Line 2.0 247hp 8AT AWD	10
-KIJ5S6L8G1KG602	Stinger GT Line 2.0 247hp 8AT AWD	10
-KIJ5S6L8G1KD390	Stinger Luxe 2.0 197hp 8AT AWD	10
-KIJ5S6L8G1KD385	Stinger Luxe 2.0 247hp 8AT AWD	10
-KIJ5S6L8G1KD306	Stinger Luxe 2.0 247hp 8AT AWD	10
-KIJ5S6L8G1KD391	Stinger Prestige 2.0 197hp 8AT AWD	10
-KIJ5S6L8G1KD386	Stinger Prestige 2.0 247 hp 8AT AWD	10
-KIJ5S6L8G1KD307	Stinger Prestige 2.0 247 hp 8AT AWD	10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaKS04551L02	Largus_универсал Norma Comfort 5 мест Glonass 1.6 106hp 5MT	42
+LaKS04552L16	Largus_универсал Luxe Prestige 5 мест Glonass 1.6 106hp 5MT	42
+LaKS04552ACL	Largus_универсал Luxe Prestige 5 мест Glonass 1.6 106hp 5MT	42
+LaRS04551ACC	Largus_универсал Norma Comfort 7 мест Glonass 1.6 106hp 5MT	42
+LaRS04551L15	Largus_универсал Norma Comfort 7 мест Glonass 1.6 106hp 5MT	42
+LaRS04552ACL	Largus_универсал Luxe Prestige 7 мест Glonass 1.6 106hp 5MT	42
+LaRS04552L16	Largus_универсал Luxe Prestige 7 мест Glonass 1.6 106hp 5MT	42
+LaRS03551AD8	Largus_универсал Norma Comfort 7 мест Glonass 1.6 87hp 5MT	41
+LaRS03551ADM	Largus_универсал Norma Climate 7 мест Glonass 1.6 87hp 5MT	41
+LaKS03551ADM	Largus_универсал Norma Climate 5 мест Glonass 1.6 87hp 5MT	41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La2349050450	Granta_фургон Изотермический 50 мм Норма 1.6 87hp 5MT	39
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGAB1150C19	XRAY_хэтчбек Classic Air conditioner 1.6 106hp 5MT	37
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGAB1150BS1	XRAY_хэтчбек Optima Air conditioner 1.6 106hp 5MT	36
+LaGAB3350BSA	XRAY_хэтчбек Optima Air conditioner 1.8 122hp 5MT	36
+LaKS03550ACA	Largus_универсал Standard 5 мест Glonass 1.6 87hp 5MT	36
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaFS04551ACA	Largus_фургон Norma Comfort Glonass 1.6 106hp 5MT	35
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaFS03551AC7	Largus_фургон Norma Comfort Glonass 1.6 87hp 5MT	34
+
+
+
+
+
+
+
+
+
+
+
+La2190151234	Granta_седан Classic Start Glonass 1.6 87hp 5MT	34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaKS03551ACA	Largus_универсал Norma Glonass 5 мест 1.6 87hp 5MT	33
+LaKS04552AC9	Largus_универсал Luxe 5 мест Glonass 1.6 106hp 5MT	33
+LaKS04552XCA	Largus_Cross Luxe Glonass 5 мест 1.6 106hp 5MT	33
+LaKS04552XL1	Largus_Cross Luxe Glonass 5 мест 1.6 106hp 5MT	33
+LaKS04552L13	Largus_универсал Luxe 5 мест Glonass 1.6 106hp 5MT	33
+LaRS04552L13	Largus_универсал Luxe 7 мест Glonass 1.6 106hp 5MT	33
+LaRS04552AC9	Largus_универсал Luxe 7 мест Glonass 1.6 106hp 5MT	33
+LaRS04552XCA	Largus_Cross Luxe Glonass 7 мест 1.6 106hp 5MT	33
+LaRS04552XL1	Largus_Cross Luxe Glonass 7 мест 1.6 106hp 5MT	33
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGFL1151073	Vesta_седан Comfort Multimedia 1.6 106hp 5MT	32
+LaGFL1251073	Vesta_седан Comfort Multimedia 1.6 106hp 5AT	32
+LaFS03551ACG	Largus_фургон Norma Audio Glonass 1.6 87hp 5MT	32
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La219015127K	Granta_седан Comfort Multimedia 1.6 87hp 5MT	31
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaFS03550ACA	Largus_фургон Standard Glonass 1.6 87hp 5MT	29
+LaGFL1252073	Vesta_седан Luxe Multimedia 1.6 106hp 5AT	29
+LaGFL1152073	Vesta_седан Luxe Multimedia 1.6 106hp 5MT	29
+LaGFK3352XK2	Vesta_SW_Cross Luxe Multimedia 1.8 122hp 5MT	29
+LaGFK1152AK2	Vesta_SW Luxe Multimedia 1.6 106hp 5MT	29
+LaGFK1152XK2	Vesta_SW_Cross Luxe Multimedia 1.6 106hp 5MT	29
+LaGFK1252AK2	Vesta_SW Luxe Multimedia 1.6 106hp 5AT	29
+LaGFK3252XK2	Vesta_SW_Cross Luxe Multimedia 1.8 122hp 5AT	29
+LaGFK3252AK2	Vesta_SW Luxe Multimedia 1.8 122hp 5AT	29
+LaGFK3352AK2	Vesta_SW Luxe Multimedia 1.8 122hp 5MT	29
+LaGFLA152021	Vesta_CNG Luxe Multimedia 1.6 106hp 5MT	29
+LaGFL3352073	Vesta_седан Luxe Multimedia 1.8 122hp 5MT	29
+LaGFL3352X73	Vesta_Cross Luxe Multimedia 1.8 122hp 5MT	29
+LaGFL3252X73	Vesta_Cross Luxe Multimedia 1.8 122hp 5AT	29
+LaGFL3252073	Vesta_седан Luxe Multimedia 1.8 122hp 5AT	29
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaRS03551A2U	Largus_универсал Стандарт 7 мест 1.6 87hp 5MT	28
+La21947A10YL	Granta_универсал Classic Optima 1.6 106hp 5AT	28
+La21917A10YW	Granta_лифтбек Classic Optima 1.6 106hp 5AT	28
+LaGAB3350X01	XRAY_Cross Classic Optima 1.8 122hp 5MT	28
+
+
+
+
+
+
+
+
+La21907A11YD	Granta_седан Classic Optima 1.6 106hp 5AT	28
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La21907A2085	Granta_седан Luxe Prestige 1.6 106hp 5MT	27
+La21907A21YL	Granta_седан Luxe Prestige 1.6 106hp 5AT	27
+La21911A100W	Granta_лифтбек Classic Optima 1.6 87hp 5MT	27
+La21901A1074	Granta_седан Classic Optima 1.6 87hp 5MT	27
+
+
+
+
+
+
+
+
+
+LaGAB1151C13	XRAY_хэтчбек Luxe Prestige 1.6 106hp 5MT	27
+LaGAB3351BL6	XRAY_хэтчбек Luxe Prestige 1.8 122hp 5MT	27
+LaGAB3351C16	XRAY_хэтчбек Luxe Prestige 1.8 122hp 5MT	27
+LaGAB3352XU4	XRAY_Cross Luxe Prestige 1.8 122hp 5MT	27
+LaGAB1151BH1	XRAY_хэтчбек Luxe Prestige 1.6 106hp 5MT	27
+LaGAB3251BL6	XRAY_хэтчбек Luxe Prestige 1.8 122hp 5AT	27
+LaGAB3251C16	XRAY_хэтчбек Luxe Prestige 1.8 122hp 5AT	27
+La21917A2061	Granta_лифтбек Luxe Prestige 1.6 106hp 5MT	27
+La21917A21Y5	Granta_лифтбек Luxe Prestige 1.6 106hp 5AT	27
+La21921A1061	Granta_хэтчбек Classic Optima 1.6 87hp 5MT	27
+La21941A100L	Granta_универсал Classic Optima 1.6 87hp 5MT	27
+LaGFL3252BTS	Vesta_седан Luxe Prestige 1.8 122hp 5AT	27
+LaGFL3351072	Vesta_седан Comfort Image 1.8 122hp 5MT	27
+LaGFL3252X75	Vesta_Cross Luxe Prestige 1.8 122hp 5AT	27
+LaGFL3352X75	Vesta_Cross Luxe Prestige 1.8 122hp 5MT	27
+LaGFL3352BTS	Vesta_седан Luxe Prestige 1.8 122hp 5MT	27
+LaGFLA150011	Vesta_CNG Classic Start 1.6 106hp 5MT	27
+LaGFK3352ASH	Vesta_SW Luxe Prestige 1.8 122hp 5MT	27
+LaGFK3252ASH	Vesta_SW Luxe Prestige 1.8 122hp 5AT	27
+LaGFK3252XSH	Vesta_SW_Cross Luxe Prestige 1.8 122hp 5AT	27
+LaGFK3351ABS	Vesta_SW Comfort Image 1.8 122hp 5MT	27
+LaGFK1152ASH	Vesta_SW Luxe Prestige 1.6 106hp 5MT	27
+LaGFK1151ABS	Vesta_SW Comfort Image 1.6 106hp 5MT	27
+LaGFK3352XSH	Vesta_SW_Cross Luxe Prestige 1.8 122hp 5MT	27
+LaGFL1150078	Vesta_седан Classic Start 1.6 106hp 5MT	27
+LaGFL1151072	Vesta_седан Comfort Image 1.6 106hp 5MT	27
+LaGFL1152BTS	Vesta_седан Luxe Prestige 1.6 106hp 5MT	27
+LaGFL1250070	Vesta_седан Classic Start 1.6 106hp 5AT	27
+LaGFL3251072	Vesta_седан Comfort Image 1.8 122hp 5AT	27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaFS03551ACB	Largus_фургон Norma Glonass 1.6 87hp 5MT	26
+LaFS03550AC8	Largus_фургон Start Glonass 1.6 87hp 5MT	26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaRS04552X00	Largus_Cross Luxe 7 мест 1.6 106hp 5MT	25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGFL325204P	Vesta_седан Multimedia 1.8 122hp 5AT	24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGFL3353070	Vesta_седан Exclusive 1.8 122hp 5MT	23
+LaGFL3253070	Vesta_седан Exclusive 1.8 122hp 5AT	23
+LaGAB3352BDA	XRAY_хэтчбек Exclusive 1.8 122hp 5MT	23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGAB1150C10	XRAY_хэтчбек Standard 1.6 106hp 5MT	22
+LaGAB33506CP	XRAY_хэтчбек Аdvanced 1.8 122hp 5MT	22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La2121452070	4x4_3дв_Bronto Standard Image 1.7 5MT	22
+La2121453070	4x4_3дв_Bronto Standard Image 1.7 5MT	22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La2121454017	4x4_3дв Black Edition 1.7 5MT	21
+La2131054017	4x4_5дв Black Edition 1.7 5MT	21
+La21901A0001	Granta_седан Standard 1.6 87hp 5MT	21
+La21911A0001	Granta_лифтбек Standard 1.6 87hp 5MT	21
+La21907A11YF	Granta_седан Comfort 1.6 106hp 5AT	21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGAB3350BDZ	XRAY_хэтчбек Comfort 1.8 122hp 5MT	21
+LaGAB1150C11	XRAY_хэтчбек Classic 1.6 106hp 5MT	21
+LaGAB1150C17	XRAY_хэтчбек Comfort 1.6 106hp 5MT	21
+LaGFK1151000	Vesta_SW Comfort 1.6 106hp 5MT	21
+LaGAB3351XRZ	XRAY_Cross Comfort 1.8 122hp 5MT	21
+LaGAB3250BDZ	XRAY_хэтчбек Comfort 1.8 122hp 5AT	21
+LaGAB3250C18	XRAY_хэтчбек Comfort 1.8 122hp 5AT	21
+LaGAB3350C18	XRAY_хэтчбек Comfort 1.8 122hp 5MT	21
+LaGAB3350XRZ	XRAY_Cross Classic 1.8 122hp 5MT	21
+LaFS03550A00	Largus_фургон Стандарт 1.6 87hp 5MT	21
+La21947A100N	Granta_универсал Comfort 1.6 106hp 5MT	21
+La21947A10YN	Granta_универсал Comfort 1.6 106hp 5AT	21
+La21921A0001	Granta_хэтчбек Standard 1.6 87hp 5MT	21
+La21927A1062	Granta_хэтчбек Comfort 1.6 106hp 5MT	21
+La21927A10Y6	Granta_хэтчбек Comfort 1.6 106hp 5AT	21
+La21941A0001	Granta_универсал Standard 1.6 87hp 5MT	21
+La21917A11Y1	Granta_лифтбек Comfort 1.6 106hp 5AT	21
+La21907A1076	Granta_седан Comfort 1.6 106hp 5MT	21
+La21917A1053	Granta_лифтбек Comfort 1.6 106hp 5MT	21
+LaGFL3351070	Vesta_седан Comfort 1.8 122hp 5MT	21
+LaGFLA151011	Vesta_CNG Comfort 1.6 106hp 5MT	21
+LaGFL3251070	Vesta_седан Comfort 1.8 122hp 5AT	21
+LaGFL1251070	Vesta_седан Comfort 1.6 106hp 5AT	21
+LaGAB1150BDP	XRAY_хэтчбек Comfort 1.6 106hp 5MT	21
+LaGFL1151070	Vesta_седан Comfort 1.6 106hp 5MT	21
+LaGFL1150070	Vesta_седан Classic 1.6 106hp 5MT	21
+LaGFK1251000	Vesta_SW Comfort 1.6 106hp 5AT	21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La21912A1004	Granta_лифтбек Comfort 1.6 98hp 4AT	20
+La21941A1000	Granta_универсал Classic 1.6 87hp 5MT	20
+La21921A1000	Granta_хэтчбек Classic 1.6 87hp 5MT	20
+La21921A1062	Granta_хэтчбек Comfort 1.6 87hp 5MT	20
+La21941A100N	Granta_универсал Comfort 1.6 87hp 5MT	20
+La21942A1089	Granta_универсал Comfort 1.6 98hp 4AT	20
+La21922A1125	Granta_хэтчбек Comfort 1.6 98hp 4AT	20
+LaGAB1150BDA	XRAY_хэтчбек Optima 1.6 106hp 5MT	20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La21911A1000	Granta_лифтбек Classic 1.6 87hp 5MT	20
+La21911A1053	Granta_лифтбек Comfort 1.6 87hp 5MT	20
+La21901A1000	Granta_седан Classic 1.6 87hp 5MT	20
+La21901A1076	Granta_седан Comfort 1.6 87hp 5MT	20
+La21902A1113	Granta_седан Comfort 1.6 98hp 4AT	20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LaGAB1151C11	XRAY_хэтчбек Luxe 1.6 106hp 5MT	18
+LaGAB1151BDA	XRAY_хэтчбек Luxe 1.6 106hp 5MT	18
+LaGAB3351000	XRAY_хэтчбек Luxe 1.8 122hp 5MT	18
+LaGAB3351BDA	XRAY_хэтчбек Luxe 1.8 122hp 5MT	18
+LaGAB3351C11	XRAY_хэтчбек Luxe 1.8 122hp 5MT	18
+LaGAB3352XRZ	XRAY_Cross Luxe 1.8 122hp 5MT	18
+LaFS03551A0L	Largus_фургон Норма 1.6 87hp 5MT	18
+La21947A2000	Granta_универсал Luxe 1.6 106hp 5MT	18
+La21947A20Y0	Granta_универсал Luxe 1.6 106hp 5AT	18
+La21927A2000	Granta_хэтчбек Luxe 1.6 106hp 5MT	18
+La21917A2000	Granta_лифтбек Luxe 1.6 106hp 5MT	18
+La21917A20Y0	Granta_лифтбек Luxe 1.6 106hp 5AT	18
+LaGFK1252000	Vesta_SW Luxe 1.6 106hp 5AT	18
+LaGFK3252000	Vesta_SW Luxe 1.8 122hp 5AT	18
+LaGFK1152000	Vesta_SW Luxe 1.6 106hp 5MT	18
+LaGFK1152X00	Vesta_SW_Cross Luxe 1.6 106hp 5MT	18
+LaGFK3352000	Vesta_SW Luxe 1.8 122hp 5MT	18
+LaGFK3252X00	Vesta_SW_Cross Luxe 1.8 122hp 5AT	18
+LaGFK3352X00	Vesta_SW_Cross Luxe 1.8 122hp 5MT	18
+LaGFL1152070	Vesta_седан Luxe 1.6 106hp 5MT	18
+LaGFL1152X70	Vesta_Cross Luxe 1.6 106hp 5MT	18
+LaGFL3352X70	Vesta_Cross Luxe 1.8 122hp 5MT	18
+LaGFL3352070	Vesta_седан Luxe 1.8 122hp 5MT	18
+LaGFL3252X70	Vesta_Cross Luxe 1.8 122hp 5AT	18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La21907A2000	Granta_седан Luxe 1.6 106hp 5MT	18
+La21907A20Y0	Granta_седан Luxe 1.6 106hp 5AT	18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La21911A2000	Granta_лифтбек Luxe 1.6 87hp 5MT	17
+La21902A2000	Granta_седан Luxe 1.6 98hp 4AT	17
+La21901A2000	Granta_седан Luxe 1.6 87hp 5MT	17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La21912A2000	Granta_лифтбек Luxe 1.6 98hp 4AT	17
+La21921A2000	Granta_хэтчбек Luxe 1.6 87hp 5MT	17
+La21942A2000	Granta_универсал Luxe 1.6 98hp 4AT	17
+La21941A2000	Granta_универсал Luxe 1.6 87hp 5MT	17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La2121450070	4x4_3дв_Bronto Standard 1.7 5MT	16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La2121450040	4x4_3дв Classic 1.7 5MT	15
+
+
+La2121452045	4x4_3дв Classic 1.7 5MT	15
+La2131050040	4x4_5дв Classic 1.7 5MT	15
+La2121458045	4x4_3дв Classic 1.7 5MT	15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+La2121452010	4x4_3дв Luxe 1.7 5MT	12
+La2121452011	4x4_3дв Luxe 1.7 5MT	12
+La2121452040	4x4_3дв Luxe 1.7 5MT	12
+La2121459018	4x4_3дв_Urban Luxe 1.7 5MT	12
+La2121459048	4x4_3дв_Urban Luxe 1.7 5MT	12
+La2131050018	4x4_5дв_Urban Luxe 1.7 5MT	12
+La2131052040	4x4_5дв Luxe 1.7 5MT	12
+La2131058044	4x4_5дв Luxe 1.7 5MT	12
+La2131059048	4x4_5дв_Urban Luxe 1.7 5MT	12
+
+La2121458014	4x4_3дв Luxe 1.7 5MT	12
+La2121458044	4x4_3дв Luxe 1.7 5MT	12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
