@@ -4053,7 +4053,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar DATASETS = exports.DATASETS = [{\n  //name: 'AS DB sorted by spreading and uncertainty',\n  name: 'AS DB sorted',\n  file: 'version_as.tsv'\n}, {\n  name: 'Original AS DB',\n  file: 'version_as_u.tsv'\n}, {\n  //name: 'ILSA DB sorted by spreading and uncertainty',\n  name: 'ILSA DB sorted',\n  file: 'version_ilsa.tsv'\n}, {\n  name: 'Original ILSA DB',\n  file: 'version_ilsa_u.tsv'\n}, {\n  name: 'JLR distributor DB',\n  file: 'jlr.tsv'\n}, {\n  name: 'DB for selected brand',\n  file: 'version_as_terms.tsv'\n}];\n\n//////////////////\n// WEBPACK FOOTER\n// ./demo/src/datasets.js\n// module id = 570\n// module chunks = 0\n\n//# sourceURL=webpack:///./demo/src/datasets.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar DATASETS = exports.DATASETS = [{\n  //name: 'AS DB sorted by spreading and uncertainty',\n  name: 'AS DB sorted',\n  file: 'version_as.tsv'\n}, {\n  name: 'Original AS DB',\n  file: 'version_as_u.tsv'\n}, {\n  //name: 'ILSA DB sorted by spreading and uncertainty',\n  name: 'ILSA DB sorted',\n  file: 'version_ilsa.tsv'\n}, {\n  name: 'Original ILSA DB',\n  file: 'version_ilsa_u.tsv'\n}, {\n  name: 'JLR distributor DB',\n  file: 'jlr.tsv'\n}, {\n  name: 'La LADA',\n  file: 'version_ilsa_all.tsv'\n}];\n\n//////////////////\n// WEBPACK FOOTER\n// ./demo/src/datasets.js\n// module id = 570\n// module chunks = 0\n\n//# sourceURL=webpack:///./demo/src/datasets.js?");
 
 /***/ }),
 /* 571 */,
