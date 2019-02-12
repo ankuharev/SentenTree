@@ -1,0 +1,18 @@
+http://localhost:8080/index.html
+
+D:\SentenTree\demo>python -m http.server 8080
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+127.0.0.1 - - [21/Jan/2019 09:19:46] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jan/2019 09:19:47] "GET /dist/main.scss HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jan/2019 09:19:47] "GET /dist/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jan/2019 09:19:48] code 404, message File not found
+127.0.0.1 - - [21/Jan/2019 09:19:48] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [21/Jan/2019 09:19:56] "GET /data/version_as_all.tsv HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jan/2019 09:20:15] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jan/2019 09:20:15] "GET /dist/main.scss HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jan/2019 09:20:15] "GET /dist/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [21/Jan/2019 09:20:16] code 404, message File not found
+127.0.0.1 - - [21/Jan/2019 09:20:16] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [21/Jan/2019 09:20:27] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [21/Jan/2019 09:20:27] "GET /dist/main.scss HTTP/1.1" 304 -
+127.0.0.1 - - [21/Jan/2019 09:20:27] "GET /dist/main.js HTTP/1.1" 304 -

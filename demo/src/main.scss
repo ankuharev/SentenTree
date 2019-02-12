@@ -2,7 +2,7 @@
 @import './styles/_mockTweet';
 
 .page-header h1 {
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
     text-align: center;
   }
 }

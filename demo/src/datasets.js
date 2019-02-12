@@ -1,41 +1,44 @@
 export const DATASETS = [
   {
-    name: 'First goal of World Cup 2014',
-    file: 'goal.tsv',
-    terms: {'world':2, 'cup':2, 'brazil':1}
-  },
-  // {
-  //   file: 'goal1.tsv',
-  //   terms: {'world':2, 'cup':2, 'brazil':1}
-  // },
-  // {
-  //   file: 'goal2.tsv',
-  //   terms: {'world':2, 'cup':2, 'brazil':1}
-  // },
-  // {
-  //   file: 'goal3.tsv',
-  //   terms: {'world':2, 'cup':2, 'brazil':1}
-  // },
-  // {
-  //   file: 'goal4.tsv',
-  //   terms: {'world':2, 'cup':2, 'brazil':1}
-  // },
-  {
-    name: 'Sochi Dogs (Winter Olympics)',
-    file: 'sochidogs.tsv',
+    name: 'DB cross update',
+    file: 'cross_update.tsv',
   },
   {
-    name: 'Eat 24',
-    file: 'eat24.tsv',
+    name: 'DB cross',
+    file: 'cross_diff_all.tsv',
   },
   {
-    name: 'Robin Williams',
-    file: 'robin_williams.json',
-    terms: {'robin':2, 'williams':2},
+    name: 'DB cross filtered',
+    file: 'cross_diff_all_filt.tsv',
   },
   {
-    name: 'Yosemite',
-    file: 'yosemite.json',
-    terms: {'yosemite':1},
-  }
+    name: 'DB AS',
+    file: 'version_as_all.tsv',
+  },
+  {
+    name: 'DB ILSA',
+    file: 'version_ilsa_all.tsv',
+  },
+  {
+    name: 'JLR distributor DB',
+    file: 'jlr.tsv',
+  },
+  {
+    //name: 'AS DB sorted by spreading and uncertainty',
+    name: 'JLR AS DB sorted',
+    file: 'version_as.tsv',
+  },
+  {
+    name: 'JLR Original AS DB',
+    file: 'version_as_u.tsv',
+  },
+  {
+    //name: 'ILSA_DB sorted by spreading and uncertainty',
+    name: 'JLR ILSA DB sorted',
+    file: 'version_ilsa.tsv',
+  },
+  {
+    name: 'JLR Original ILSA DB',
+    file: 'version_ilsa_u.tsv',
+  },
 ];

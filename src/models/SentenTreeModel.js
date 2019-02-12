@@ -3,7 +3,7 @@ import { max, min } from 'lodash';
 import Heap from 'heap';
 import RawGraph from './RawGraph.js';
 
-const DEFAULT_NODE_COUNT = 150;
+const DEFAULT_NODE_COUNT = 3000; // 300; //150;
 
 function growSeq(seq, terms, minSupport, maxSupport, itemset) {
   /* find the next frequent sequence by inserting a new word to current sequence */
@@ -119,7 +119,7 @@ function expandSeqTree(rootSeq, graphs, expandCnt, minSupport, maxSupport, terms
           id: graph.totalNodeCnt++,
           entity: itemset[word],
           freq: count,
-          topEntries: s1.DBs.slice(0, 5),
+          topEntries: s1.DBs.slice(0, 20),
           seq: s1,
         };
         const newWords = s.words.slice();
@@ -195,7 +195,7 @@ export default class SentenTreeModel {
       // and size * minSupportRatio
       minSupportCount = 2,
       minSupportRatio = 0.001,
-      maxSupportRatio = 0.75,
+      maxSupportRatio = 1, //0.75,
     } = options;
 
     this.options = options;
@@ -230,9 +230,9 @@ export default class SentenTreeModel {
       itemset
     );
 
-    this.graphs = graphs
-      .filter(g => g.nodes.length > 2)
-      .slice(0, 10);
+    this.graphs = graphs;
+    //  .filter(g => g.nodes.length > 2)
+    //  .slice(0, 10);
 
     updateNodesEdges(this.graphs, visibleGroups);
   }

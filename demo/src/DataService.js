@@ -2,20 +2,59 @@ import { json as d3Json, text as d3Text } from 'd3-request';
 
 import { tsvParseRows } from 'd3-dsv';
 
-function cleanUrl(text) {
-  return text.replace(/https?\:\/\/[A-Za-z0-9.\/]+/gi, '[url]');
+function pushTextHeader(text, keyControl) {
+	if (!keyControl.includes(text))
+		keyControl.push(text);
 }
 
-export function loadFile(file, callback) {
+function parseText(id, name, text, keyControl, key) {
+	if (id == 'id')
+		return text;
+	
+	if (name.length > 1 && id.substring(0,2) != name)
+	  return '';
+
+	if (!isNaN(key)) {
+		if (key == 0) {
+			let spacePosition = text.indexOf(' ');
+			
+			if (spacePosition === -1)
+				pushTextHeader(text, keyControl);
+			else
+				pushTextHeader(text.substr(0, spacePosition), keyControl);
+		} else if (key > 0) { 
+			let keyName = keyControl[key];
+			
+			if (text.length < keyName.length + 1)
+				return '';
+			else if (text.substring(0,keyName.length + 1) != (keyName + ' ')) 
+				return '';
+		}
+	}
+
+	return text;
+}
+
+function cleanCount(count) {
+  if (count && !isNaN(count) && count < 10)
+	  return 10;
+  return count;
+}
+
+export function loadFile(name, file, keyControl, key, callback) {
   const chunks = file.split('.');
   const ext = chunks[chunks.length-1].toLowerCase();
+
+  if (name.length > 2) 
+	  name = '';
+		  
   if (ext === 'json') {
     d3Json(file, (error, data) => {
       if (error) callback(error);
 
       const rows = data.map(row => ({
         id: row.id,
-        text: cleanUrl(row.text),
+        text: parseText(id, name, row.text, keyControl),
         count: +row.count
       }));
 
@@ -25,11 +64,16 @@ export function loadFile(file, callback) {
     d3Text(file, (error, data) => {
       if (error) callback(error);
 
+	  if (key == 0) {
+		  keyControl.splice(0,keyControl.length);
+		  keyControl.push('*');
+	  }
+
       const rows = tsvParseRows(data)
         .map(([id, text, count]) => ({
           id,
-          text: cleanUrl(text),
-          count: +count
+          text: parseText(id, name, text, keyControl, key),
+          count: +cleanCount(count)
         }));
 
       callback(error, rows);

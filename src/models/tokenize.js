@@ -12,6 +12,8 @@ export function tokenize(text) {
 }
 
 export function tokenizeBySpace(text) {
+  if (!text || text.length === 0 || !text.trim())
+	  return [];
   return text
     .split(' ')
     .filter(x => x.length > 0);

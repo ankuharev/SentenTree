@@ -8,9 +8,12 @@ tsv('data/demo.tsv', (error, rawdata) => {
   const data = rawdata.map(d => Object.assign({}, d, { count: +d.count }));
   console.time('Build model');
   const model = new SentenTreeBuilder()
-    .tokenize(tokenizer.tokenizeBySpace)
-    .transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
-    .buildModel(data);
+    //.tokenize(tokenizer.tokenizeBySpace) ////
+    //.transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
+    //.buildModel(data);
+    .buildModel(data, { minSupportCount: 10, 
+						minSupportRatio: 0, 
+						maxSupportRatio: 1 });
   console.timeEnd('Build model');
 
   container.innerHTML = '';
