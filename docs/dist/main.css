@@ -1,5 +1,5 @@
-@import './styles/_stickyFooter';
-@import './styles/_mockTweet';
+@import './styles/_stickyFooter.scss';
+@import './styles/_mockTweet.scss';
 
 .page-header h1 {
   @media (max-width: 600px) {
