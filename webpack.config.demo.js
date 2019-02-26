@@ -13,6 +13,7 @@ var config = {
     'demo/dist/main-simple_h5.js': './demo/src/main-simple_h5.js',
     'demo/dist/main-simple_ilsa.js': './demo/src/main-simple_ilsa.js',
     'demo/dist/version.js': './demo/src/version.js',
+    'demo/dist/deep.js': './demo/src/deep.js',
   },
   output: {
     path: __dirname,
