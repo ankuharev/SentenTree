@@ -270,7 +270,7 @@ class App extends React.Component {
               </option>
             )}
           </select>
-		  <button onClick={e => this.graphRefresh()}> Refresh </button>
+		  <button onClick={e => this.graphRefresh()}> Clear & Refresh </button>
 		  {this.state.entity}
         </div>
         <div className="container">

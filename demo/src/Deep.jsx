@@ -2,10 +2,11 @@ import * as DataService from './DataService.js';
 import * as d3 from 'd3-selection';
 
 import React, { PropTypes } from 'react';
-import { SentenTreeBuilder, SentenTreeVis as _SentenTreeVis, tokenizer } from '../../src/main.js';
+import { SentenTreeBuilder, SentenTreeVis as _SentenTreeVis, tokenizer } from '../../src/main_deep.js';
 
 import { DATASETS } from './datasets_deep.js';
 import { DATASETS_BRAND } from './datasets_brand.js';
+import { DATASETS_KEYS } from './datasets_keys.js';
 import { createComponent } from 'react-d3kit';
 import { format } from 'd3-format';
 

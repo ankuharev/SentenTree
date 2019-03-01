@@ -1,14 +1,14 @@
 export const DATASETS = [
   {
-    name: 'DB AS',
+    name: 'DB A',
     file: 'version_as_all.tsv',
   },
   {
-    name: 'DB ILSA',
+    name: 'DB I',
     file: 'version_ilsa_all.tsv',
   },
   {
-    name: 'JLR distributor DB',
+    name: 'JLR DB',
     file: 'jlr.tsv',
   },
 ];
