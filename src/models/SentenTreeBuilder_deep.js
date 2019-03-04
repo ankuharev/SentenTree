@@ -12,7 +12,7 @@ export default class SentenTreeBuilder {
     this._transformToken = identity;
     const filter = WordFilter.getDefault();
     const dictFilter = DictionaryFilter.getDefault();
-    //this._dictToken = token => dictFilter.test(token);
+    this._dictToken = token => dictFilter.test(token);
     this._filterToken = token => !filter.test(token);
   }
 
@@ -35,6 +35,17 @@ export default class SentenTreeBuilder {
   }
 
   buildTokenizedDataset(entries) {
+    const dictTokenizedEntries = entries
+      .map(entry => ({
+        id: entry.id+"_10",
+        count: entry.count*10,
+        tokens: this._tokenize(entry.text)
+          .map(this._transformToken)
+          .filter(this._dictToken),
+        rawText: entry.text,
+      }))
+      .filter(entry => entry.tokens.length > 0);
+
     const tokenizedEntries = entries
       .map(entry => ({
         id: entry.id,
@@ -46,11 +57,13 @@ export default class SentenTreeBuilder {
       }))
       .filter(entry => entry.tokens.length > 0);
 	  
-	tokenizedEntries.forEach(function(part, index) {
-		this[index].count = dictFilter.test(this[index].tokens)?this[index].count*10:this[index].count;
-	}, tokenizedEntries);
+	//tokenizedEntries.forEach(function(part, index) {
+	//	this[index].count = this._dictToken(this[index].tokens)?this[index].count*10:this[index].count;
+	//}, tokenizedEntries);
 
-    return new TokenizedDataset(tokenizedEntries);
+    //const tokenEntries = tokenizedEntries.slice(0,1).concat(dictTokenizedEntries).concat(tokenizedEntries.slice(1));
+    const tokenEntries = tokenizedEntries; //.slice(0,1).concat(dictTokenizedEntries).concat(tokenizedEntries.slice(1));
+    return new TokenizedDataset(tokenEntries);
   }
 
   buildModel(entries, options) {
