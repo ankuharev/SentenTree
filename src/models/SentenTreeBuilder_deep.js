@@ -1,6 +1,7 @@
 import SentenTreeModel from './SentenTreeModel.js';
 import TokenizedDataset from './TokenizedDataset.js';
-import WordFilter from './WordFilter_deep.js';
+import WordFilter from './WordFilter.js';
+import DictionaryFilter from './WordFilter_deep.js';
 import { tokenize } from './tokenize.js';
 
 const identity = x => x;
@@ -10,8 +11,9 @@ export default class SentenTreeBuilder {
     this._tokenize = tokenize;
     this._transformToken = identity;
     const filter = WordFilter.getDefault();
-    //this._filterToken = token => !filter.test(token);
-    this._filterToken = token => filter.test(token);
+    const dictFilter = DictionaryFilter.getDefault();
+    //this._dictToken = token => dictFilter.test(token);
+    this._filterToken = token => !filter.test(token);
   }
 
   tokenize(...args) {
@@ -36,13 +38,17 @@ export default class SentenTreeBuilder {
     const tokenizedEntries = entries
       .map(entry => ({
         id: entry.id,
-        count: (entry.count * 10) || 1,
+        count: entry.count,
         tokens: this._tokenize(entry.text)
           .map(this._transformToken)
           .filter(this._filterToken),
         rawText: entry.text,
       }))
       .filter(entry => entry.tokens.length > 0);
+	  
+	tokenizedEntries.forEach(function(part, index) {
+		this[index].count = dictFilter.test(this[index].tokens)?this[index].count*10:this[index].count;
+	}, tokenizedEntries);
 
     return new TokenizedDataset(tokenizedEntries);
   }
