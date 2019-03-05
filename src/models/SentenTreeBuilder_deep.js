@@ -49,20 +49,15 @@ export default class SentenTreeBuilder {
     const tokenizedEntries = entries
       .map(entry => ({
         id: entry.id,
-        count: entry.count,
+        count: entry.count || 1,
         tokens: this._tokenize(entry.text)
           .map(this._transformToken)
           .filter(this._filterToken),
         rawText: entry.text,
       }))
-      .filter(entry => entry.tokens.length > 0);
+      .filter(entry => entry.tokens.length > 3);
 	  
-	//tokenizedEntries.forEach(function(part, index) {
-	//	this[index].count = this._dictToken(this[index].tokens)?this[index].count*10:this[index].count;
-	//}, tokenizedEntries);
-
-    //const tokenEntries = tokenizedEntries.slice(0,1).concat(dictTokenizedEntries).concat(tokenizedEntries.slice(1));
-    const tokenEntries = tokenizedEntries; //.slice(0,1).concat(dictTokenizedEntries).concat(tokenizedEntries.slice(1));
+    const tokenEntries = tokenizedEntries.slice(0,1).concat(dictTokenizedEntries).concat(tokenizedEntries.slice(1));
     return new TokenizedDataset(tokenEntries);
   }
 

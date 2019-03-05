@@ -1,9 +1,9 @@
 import { keyBy, uniq } from 'lodash';
 
 const NLTK_FILTER_WORDS = [
-'good',
+//'good',
 'mean',
-'either',
+//'either',
 'dead',
 'treat',
 'reason',
@@ -30,10 +30,9 @@ const NLTK_FILTER_WORDS = [
 'handle',
 'thyroid',
 'fair',
-'fair',
 'honor',
 'odds',
-'whether',
+//'whether',
 'clot',
 'platelets',
 'fungal',
