@@ -7,4 +7,5 @@ Gemfile.lock
 *.log
 bower_components
 .vscode/*
-demo/dist/*.js
+/demo/dist/*.js
+/demo/dist/deep.js
