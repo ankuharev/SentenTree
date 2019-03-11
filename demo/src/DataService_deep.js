@@ -4,6 +4,8 @@ import { json as d3Json, text as d3Text } from 'd3-request';
 
 import { tsvParseRows } from './srt_deep';
 
+import { dictParseRows } from './dict_deep';
+
 function pushTextHeader(text, keyControl) {
 	if (!keyControl.includes(text))
 		keyControl.push(text);
