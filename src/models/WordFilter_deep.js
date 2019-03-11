@@ -46,12 +46,17 @@ const NLTK_FILTER_WORDS = [
 export default class DictionaryFilter {
   constructor({
   } = {}) {
-	this.filterWords = NLTK_FILTER_WORDS;
-    this.regex = new RegExp(`^(${this.filterWords.join('|')})$`);
+	//this.filterWords = NLTK_FILTER_WORDS;
+    //this.regex = new RegExp(`^(${this.filterWords.join('|')})$`);
   }
 
   test(word) {
     return this.regex.test(word);
+  }
+  
+  filterTree(dictWords) {
+	this.filterWords = dictWords; //NLTK_FILTER_WORDS;
+    this.regex = new RegExp(`^(${this.filterWords.join('|')})$`);
   }
 }
 

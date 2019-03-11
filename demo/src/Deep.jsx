@@ -1,4 +1,4 @@
-import * as DataService from './DataService.js';
+import * as DataService from './DataService_deep.js';
 import * as d3 from 'd3-selection';
 
 import React, { PropTypes } from 'react';
@@ -14,6 +14,58 @@ const MINSUPPORTCOUNT = 10;
 const MINSUPPORTRATIO = 0.000001;
 const MAXSUPPORTRATIO = 1;
 
+const NLTK_FILTER_WORDS = [
+'reason',
+'apparently',
+'eventually',
+'pretend',
+'sore',
+'swelling',
+]; 
+/*
+const NLTK_FILTER_WORDS = [
+//'good',
+//'mean',
+//'either',
+'dead',
+'treat',
+'reason',
+'rash',
+'tumor',
+'lung',
+'kidney',
+'apparently',
+'chest',
+'eventually',
+'guilt',
+'boring',
+'ankle',
+'decent',
+'wonder',
+'weird',
+'pretend',
+'sore',
+'swelling',
+'renal',
+'owe',
+'lupus',
+'barely',
+'handle',
+'thyroid',
+'fair',
+'honor',
+'odds',
+//'whether',
+'clot',
+'platelets',
+'fungal',
+'faith',
+'marrow',
+'pretending',
+'tissue',
+'consent'
+]; 
+*/
 const SentenTreeVis = createComponent(_SentenTreeVis);
 
 const propTypes = {
@@ -35,11 +87,12 @@ class App extends React.Component {
 	  entity: null,
 	  keyControl: [],
 	  key: 0,
+	  dictWords: NLTK_FILTER_WORDS,
     };
   }
 
   componentDidMount() {
-	this.loadFile(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, this.state.key);
+	this.loadFile(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, this.state.key, this.state.dictWords);
   }
 
   graphRefresh() {
@@ -54,6 +107,7 @@ class App extends React.Component {
 		  //this.state.data.splice(1,1);
 		  this.state.data[1].count = 1;
 		  const model = new SentenTreeBuilder()
+			.filterTree(NLTK_FILTER_WORDS)
 			.tokenize(tokenizer.tokenize) 
 			.transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
 			.buildModel(this.state.data , { minSupportCount: MINSUPPORTCOUNT, 
@@ -93,9 +147,9 @@ class App extends React.Component {
 	  key: 0,
     });
 	if (this.state.entity == null)
-		this.loadFile(DATASETS_BRAND[value].brand_ilsa, DATASETS[this.state.dataset].file, 0); // this.state.key);
+		this.loadFile(DATASETS_BRAND[value].brand_ilsa, DATASETS[this.state.dataset].file, 0, this.state.dictWords); // this.state.key);
 	else
-		this.loadFileAccentEntity(DATASETS_BRAND[value].brand_ilsa, DATASETS[this.state.dataset].file, this.state.entity, 0); // this.state.key);
+		this.loadFileAccentEntity(DATASETS_BRAND[value].brand_ilsa, DATASETS[this.state.dataset].file, this.state.entity, 0, this.state.dictWords); // this.state.key);
   }
 
   changeDataset(value) {
@@ -107,9 +161,9 @@ class App extends React.Component {
 	  key: 0,
     });
 	if (this.state.entity == null)
-		this.loadFile(DATASETS[value].name, DATASETS[value].file, this.state.key);
+		this.loadFile(DATASETS[value].name, DATASETS[value].file, this.state.key, this.state.dictWords, this.state.dictWords);
 	else
-		this.loadFileAccentEntity(DATASETS[value].name, DATASETS[value].file, this.state.entity, this.state.key);
+		this.loadFileAccentEntity(DATASETS[value].name, DATASETS[value].file, this.state.entity, this.state.key, this.state.dictWords);
   }
 
   changeKey(value) {
@@ -120,9 +174,9 @@ class App extends React.Component {
 	  key: value,
     });
 	if (this.state.entity == null)
-		this.loadFile(DATASETS_BRAND[this.state.brand].brand_ilsa, DATASETS[this.state.dataset].file, value);
+		this.loadFile(DATASETS_BRAND[this.state.brand].brand_ilsa, DATASETS[this.state.dataset].file, value, this.state.dictWords);
 	else
-		this.loadFileAccentEntity(DATASETS_BRAND[this.state.brand].brand_ilsa, DATASETS[this.state.dataset].file,this.state.entity, value);
+		this.loadFileAccentEntity(DATASETS_BRAND[this.state.brand].brand_ilsa, DATASETS[this.state.dataset].file,this.state.entity, value, this.state.dictWords);
   }
 
   modifyDataset(entity) {
@@ -131,7 +185,7 @@ class App extends React.Component {
       renderedGraphs: [],
 	  entity,
     });
-	this.loadFileAccentEntity(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, entity, this.state.key);
+	this.loadFileAccentEntity(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, entity, this.state.key, this.state.dictWords);
   }
 
   selectNode(node) {
@@ -147,10 +201,11 @@ class App extends React.Component {
     this.setState({ selectedNode: null });
   }
   
-  loadFile(name, file, key) {
-    DataService.loadFile(this.changeNameByBrand(name), `data/${file}`, 	this.state.keyControl, key, (error, data) => {
-      console.time('Build model');
+  loadFile(name, file, key, dictWords) {
+    DataService.loadFile(this.changeNameByBrand(name), `data/${file}`, 	this.state.keyControl, key, dictWords, (error, data) => {
+      console.time('Build model', dictWords);
       const model = new SentenTreeBuilder()
+		.filterTree(NLTK_FILTER_WORDS)
 		.tokenize(tokenizer.tokenize) 
 		.transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
         .buildModel(data , { minSupportCount: MINSUPPORTCOUNT, 
@@ -171,7 +226,7 @@ class App extends React.Component {
   }
 
   loadFileAccentEntity(name, file,entity, key) {
-    DataService.loadFile(this.changeNameByBrand(name), `data/${file}`, 	this.state.keyControl, key, (error, data) => {
+    DataService.loadFile(this.changeNameByBrand(name), `data/${file}`, 	this.state.keyControl, key, dictWords, (error, data) => {
       console.time('Build model');
 	  var entityData = {
 		  count: 10000, 
@@ -180,6 +235,7 @@ class App extends React.Component {
 	  };
 	  data.splice( 1, 0, entityData);
       const model = new SentenTreeBuilder()
+		.filterTree(NLTK_FILTER_WORDS)
 		.tokenize(tokenizer.tokenize) 
 		.transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
         .buildModel( data, 

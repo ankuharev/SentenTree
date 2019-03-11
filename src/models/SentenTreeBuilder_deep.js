@@ -33,6 +33,13 @@ export default class SentenTreeBuilder {
     this._filterToken = args[0];
     return this;
   }
+  
+  filterTree(dictWords) {
+    const dictFilter = DictionaryFilter.getDefault();
+    this._dictToken = token => dictFilter.test(token);
+	dictFilter.filterTree(dictWords);
+    return this;
+  }
 
   buildTokenizedDataset(entries) {
     const dictTokenizedEntries = entries
