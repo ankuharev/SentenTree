@@ -1,6 +1,8 @@
 import { json as d3Json, text as d3Text } from 'd3-request';
 
-import { tsvParseRows } from 'd3-dsv';
+//import { tsvParseRows } from 'd3-dsv';
+
+import { tsvParseRows } from './srt_deep';
 
 function pushTextHeader(text, keyControl) {
 	if (!keyControl.includes(text))
