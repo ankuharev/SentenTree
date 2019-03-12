@@ -1,4 +1,5 @@
 import * as DataService from './DataService_deep.js';
+import * as DataServiceDict from './DataService_dict.js';
 import * as d3 from 'd3-selection';
 
 import React, { PropTypes } from 'react';
@@ -92,6 +93,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+	this.loadDictionaryFile('en.ru.txt');
 	this.loadFile(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, this.state.key, this.state.dictWords);
   }
 
@@ -199,6 +201,17 @@ class App extends React.Component {
 
   clearNode() {
     this.setState({ selectedNode: null });
+  }
+
+  loadDictionaryFile(file) {
+    DataServiceDict.loadFile(`data/${file}`, (error, dictWords) => {
+      console.time('Load dictionary');
+      console.timeEnd('Ok');
+
+      this.setState({
+		dictWords,
+      });
+    });
   }
   
   loadFile(name, file, key, dictWords) {

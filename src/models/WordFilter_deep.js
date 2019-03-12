@@ -1,5 +1,5 @@
 import { keyBy, uniq } from 'lodash';
-
+/*
 const NLTK_FILTER_WORDS = [
 //'good',
 'mean',
@@ -42,7 +42,7 @@ const NLTK_FILTER_WORDS = [
 'tissue',
 'consent'
 ]; 
-
+*/
 export default class DictionaryFilter {
   constructor({
   } = {}) {

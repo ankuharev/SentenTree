@@ -1,8 +1,8 @@
 import srt from "./srt";
 
-var tsv = srt("\t");
+var srt_deep = srt("\t");
 
-export var tsvParse = tsv.parse;
-export var tsvParseRows = tsv.parseRows;
-export var tsvFormat = tsv.format;
-export var tsvFormatRows = tsv.formatRows;
+export var srtParse = srt_deep.parse;
+export var srtParseRows = srt_deep.parseRows;
+export var srtFormat = srt_deep.format;
+export var srtFormatRows = srt_deep.formatRows;
