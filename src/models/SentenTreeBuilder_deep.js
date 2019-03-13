@@ -70,7 +70,7 @@ export default class SentenTreeBuilder {
 
   buildModel(entries, options) {
     return new SentenTreeModel(
-      this.buildTokenizedDataset(entries),
+      this.buildTokenizedDataset(entries.filter(entry => entry.text.length > 0)),
       options
     );
   }

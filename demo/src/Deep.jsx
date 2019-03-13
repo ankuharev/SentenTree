@@ -89,11 +89,18 @@ class App extends React.Component {
 	  keyControl: [],
 	  key: 0,
 	  dictWords: NLTK_FILTER_WORDS,
+	  dictPairs: [],
     };
   }
 
   componentDidMount() {
 	this.loadDictionaryFile('en.ru.txt');
+
+	//d = this.state.dictWords;
+	
+	//a = NLTK_FILTER_WORDS;
+	//b = d.map((entry) => (entry[0]));
+	
 	this.loadFile(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, this.state.key, this.state.dictWords);
   }
 
@@ -109,7 +116,7 @@ class App extends React.Component {
 		  //this.state.data.splice(1,1);
 		  this.state.data[1].count = 1;
 		  const model = new SentenTreeBuilder()
-			.filterTree(NLTK_FILTER_WORDS)
+			.filterTree(this.state.dictWords) 
 			.tokenize(tokenizer.tokenize) 
 			.transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
 			.buildModel(this.state.data , { minSupportCount: MINSUPPORTCOUNT, 
@@ -204,12 +211,10 @@ class App extends React.Component {
   }
 
   loadDictionaryFile(file) {
-    DataServiceDict.loadFile(`data/${file}`, (error, dictWords) => {
-      console.time('Load dictionary');
-      console.timeEnd('Ok');
-
+    DataServiceDict.loadFile(`data/${file}`, (error, dictPairs) => {
       this.setState({
-		dictWords,
+		dictWords: dictPairs.slice(0, 10).map((entry) => (entry.key)),
+		dictPairs, //: dictWords.slice(0, 10),
       });
     });
   }
@@ -218,7 +223,7 @@ class App extends React.Component {
     DataService.loadFile(this.changeNameByBrand(name), `data/${file}`, 	this.state.keyControl, key, dictWords, (error, data) => {
       console.time('Build model', dictWords);
       const model = new SentenTreeBuilder()
-		.filterTree(NLTK_FILTER_WORDS)
+		.filterTree(dictWords) 
 		.tokenize(tokenizer.tokenize) 
 		.transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
         .buildModel(data , { minSupportCount: MINSUPPORTCOUNT, 
@@ -248,7 +253,7 @@ class App extends React.Component {
 	  };
 	  data.splice( 1, 0, entityData);
       const model = new SentenTreeBuilder()
-		.filterTree(NLTK_FILTER_WORDS)
+		.filterTree(dictWords) 
 		.tokenize(tokenizer.tokenize) 
 		.transformToken(token => (/score(d|s)?/.test(token) ? 'score' : token))
         .buildModel( data, 

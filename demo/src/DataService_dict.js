@@ -47,7 +47,7 @@ export function loadFile(file, callback) {
 		.filter((entry) => (entry.key.length > 0)
 		);
 
-      callback(error, rows);
+      callback(error, rows.reverse());
     });
   }
 }
