@@ -2394,3 +2394,9 @@ possessions::собственность
 subservient::подчиненный
 merchandise::товар
 freer::халявный
+reason::q1
+apparently::q2
+eventually::q3
+pretend::q4
+sore::q5
+swelling::q6

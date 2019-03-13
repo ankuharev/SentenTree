@@ -213,8 +213,8 @@ class App extends React.Component {
   loadDictionaryFile(file) {
     DataServiceDict.loadFile(`data/${file}`, (error, dictPairs) => {
       this.setState({
-		dictWords: dictPairs.slice(0, 10).map((entry) => (entry.key)),
-		dictPairs, //: dictWords.slice(0, 10),
+		dictWords: dictPairs.slice(0, 100).map((entry) => (entry.key)),
+		dictPairs, 
       });
     });
   }
