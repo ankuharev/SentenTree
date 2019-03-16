@@ -95,12 +95,6 @@ class App extends React.Component {
 
   componentDidMount() {
 	this.loadDictionaryFile('en.ru.txt');
-
-	//d = this.state.dictWords;
-	
-	//a = NLTK_FILTER_WORDS;
-	//b = d.map((entry) => (entry[0]));
-	
 	this.loadFile(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, this.state.key, this.state.dictWords);
   }
 
@@ -211,17 +205,22 @@ class App extends React.Component {
   }
 
   loadDictionaryFile(file) {
+    console.time('Read dictionary');
     DataServiceDict.loadFile(`data/${file}`, (error, dictPairs) => {
+      console.time('Build dictionary');
       this.setState({
-		dictWords: dictPairs.slice(0, 100).map((entry) => (entry.key)),
+		//dictWords: dictPairs.slice(0, 100).map((entry) => (entry.key)),
+		dictWords: dictPairs.map((entry) => (entry.key)),
 		dictPairs, 
       });
+      console.timeEnd('Build dictionary');
     });
+    console.timeEnd('Read dictionary');
   }
   
   loadFile(name, file, key, dictWords) {
     DataService.loadFile(this.changeNameByBrand(name), `data/${file}`, 	this.state.keyControl, key, dictWords, (error, data) => {
-      console.time('Build model', dictWords);
+      console.time('Build model');
       const model = new SentenTreeBuilder()
 		.filterTree(dictWords) 
 		.tokenize(tokenizer.tokenize) 
