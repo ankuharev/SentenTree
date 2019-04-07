@@ -14,6 +14,7 @@ var config = {
     'demo/dist/main-simple_ilsa.js': './demo/src/main-simple_ilsa.js',
     'demo/dist/version.js': './demo/src/version.js',
     'demo/dist/deep.js': './demo/src/deep.js',
+    'demo/dist/Catalog.js': './demo/src/Catalog.js',
   },
   output: {
     path: __dirname,
