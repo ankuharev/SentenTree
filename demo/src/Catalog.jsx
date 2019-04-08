@@ -1,4 +1,5 @@
 import * as DataService from './DataService_catalog.js';
+import * as DataServ from './DataServ.js';
 import * as d3 from 'd3-selection';
 
 import React, { PropTypes } from 'react';
@@ -34,10 +35,16 @@ class App extends React.Component {
 	  entity: null,
 	  keyControl: [],
 	  key: 0,
+	  langs: [],
+      langsKey: 0,
+	  pairLangs: [],
+      pairLangsKey: 0,
     };
   }
 
   componentDidMount() {
+	this.loadLangsFile('cat_langs.tsv');
+	this.loadPairLangsFile('cat_pair_langs.tsv');
 	this.loadFile(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, this.state.key);
   }
 
@@ -143,6 +150,26 @@ class App extends React.Component {
 
   clearNode() {
     this.setState({ selectedNode: null });
+  }
+  
+  loadLangsFile(file) {
+    console.time('Read langs');
+    DataServ.loadFile(`data/${file}`, (error, langs) => {
+      this.setState({
+		langs, 
+      });
+    });
+    console.timeEnd('Read langs');
+  }
+  
+  loadPairLangsFile(file) {
+    console.time('Read pair langs');
+    DataServ.loadFile(`data/${file}`, (error, pairLangs) => {
+      this.setState({
+		pairLangs, 
+      });
+    });
+    console.timeEnd('Read pair langs');
   }
   
   loadFile(name, file, key) {
