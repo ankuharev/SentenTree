@@ -11,8 +11,13 @@ function parseText(id, name, text, keyControl, key) {
 	if (id == 'id')
 		return text;
 	
-	if (name.length > 1 && id.substring(0,2) != name)
-	  return '';
+	if (name.length == 5 && isNaN(id)){
+        let learn = name.substring(0,2).toLowerCase();
+        let nativ = name.substring(3).toLowerCase();
+        let pref = id.substring(0,2).toLowerCase();
+        if (!(learn == pref || nativ == pref))
+            return '';
+    }
 
 	if (!isNaN(key)) {
 		if (key == 0) {
@@ -45,8 +50,8 @@ export function loadFile(name, file, keyControl, key, callback) {
   const chunks = file.split('.');
   const ext = chunks[chunks.length-1].toLowerCase();
 
-  if (name.length > 2) 
-	  name = '';
+  //if (name.length > 2) 
+	//  name = '';
 		  
   if (ext === 'json') {
     d3Json(file, (error, data) => {

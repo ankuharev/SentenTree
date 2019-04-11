@@ -38,14 +38,17 @@ class App extends React.Component {
 	  langs: [],
       langsKey: 0,
 	  pairLangs: [],
-      pairLangsKey: 0,
+      pairLangsKey: 1,
     };
   }
 
   componentDidMount() {
 	this.loadLangsFile('cat_langs.tsv');
 	this.loadPairLangsFile('cat_pair_langs.tsv');
-	this.loadFile(DATASETS[this.state.dataset].name, DATASETS[this.state.dataset].file, this.state.key);
+	this.loadFile(//DATASETS[this.state.dataset].name
+            //this.state.langs[this.state.langsKey].id,
+            "en ru",
+            DATASETS[this.state.dataset].file, this.state.key);
   }
 
   graphRefresh() {
@@ -130,6 +133,47 @@ class App extends React.Component {
 		this.loadFileAccentEntity(DATASETS_BRAND[this.state.brand].brand_ilsa, DATASETS[this.state.dataset].file,this.state.entity, value);
   }
 
+  changeLangsKey(value) {
+    this.setState({
+      selectedNode: null,
+      renderedGraphs: [],
+	  //keyControl: [],
+	  langsKey: value,
+    });
+    let first_filter = this.state.langs[value].id + ' ' + this.state.langs[value].id;
+	if (this.state.entity == null)
+		this.loadFile(
+                first_filter, 
+                DATASETS[this.state.dataset].file, 
+                this.state.key);
+	else
+		this.loadFileAccentEntity(
+                first_filter, 
+                DATASETS[this.state.dataset].file,
+                this.state.entity, 
+                this.state.key);
+  }
+
+  changePairLangsKey(value) {
+    this.setState({
+      selectedNode: null,
+      renderedGraphs: [],
+	  //keyControl: [],
+	  langsKey: value,
+    });
+	if (this.state.entity == null)
+		this.loadFile(
+                this.state.pairLangs[value].id, 
+                DATASETS[this.state.dataset].file, 
+                this.state.key);
+	else
+		this.loadFileAccentEntity(
+                this.state.pairLangs[value].id, 
+                DATASETS[this.state.dataset].file,
+                this.state.entity, 
+                this.state.key);
+  }
+
   modifyDataset(entity) {
     this.setState({
       selectedNode: null,
@@ -173,7 +217,9 @@ class App extends React.Component {
   }
   
   loadFile(name, file, key) {
-    DataService.loadFile(this.changeNameByBrand(name), `data/${file}`, 	this.state.keyControl, key, (error, data) => {
+    DataService.loadFile(name,    //this.changeNameByBrand(name), 
+                        `data/${file}`, 	
+                        this.state.keyControl, key, (error, data) => {
       console.time('Build model');
       const model = new SentenTreeBuilder()
 		.tokenize(tokenizer.tokenizeBySpace) 
@@ -257,6 +303,8 @@ class App extends React.Component {
     }
 
     const { renderedGraphs } = this.state;
+    
+    const cur_lang = this.state.langs[this.state.langsKey];
 
     return (
       <div className={classes.join(' ')}>
@@ -276,13 +324,28 @@ class App extends React.Component {
             )}
           </select>
           <select
-            className="brand-control"
-            value={this.state.brand}
-            onChange={e => this.changeBrand(e.target.value)}
+            className="langs-control"
+            value={this.state.langsKey}
+            onChange={e => this.changeLangsKey(e.target.value)}
           >
-            {DATASETS_BRAND.map((data, i) =>
-              <option key={data.brand} value={i}>
-                {data.brand}
+            {this.state.langs.map((data, i) =>
+              <option key={data.text} value={i}>
+                {data.text}
+              </option>
+            )}
+          </select>
+          <select
+            className="langs-pair-control"
+            value={this.state.pairLangsKey}
+            onChange={e => this.changePairLangsKey(e.target.value)}
+          >
+            {this.state.pairLangs
+                        .filter((data) => 
+                            data.id.substring(0,2) == cur_lang.id
+                            )
+                        .map((data, i) =>
+              <option key={data.text} value={i}>
+                {data.text}
               </option>
             )}
           </select>
