@@ -7,6 +7,39 @@ function pushTextHeader(text, keyControl) {
 		keyControl.push(text);
 }
 
+function parseTextHeader(id, name, text, keyControl, key) {
+	if (id == 'Hid')
+		return ''; // text;
+	
+	if (name.length == 5 && isNaN(id)){
+        let learn = name.substring(0,2).toLowerCase();
+        let nativ = name.substring(3).toLowerCase();
+        let pref = id.substring(0,2).toLowerCase();
+        if (!(learn == pref || nativ == pref))
+            return '';
+    }
+
+	if (!isNaN(key)) {
+		if (key == 0) {
+			let spacePosition = text.indexOf(' ');
+			
+			if (spacePosition === -1)
+				pushTextHeader(text, keyControl);
+			else
+				pushTextHeader(text.substr(0, spacePosition), keyControl);
+		} else if (key > 0) { 
+			let keyName = keyControl[key];
+			
+			if (text.length < keyName.length + 1)
+				return '';
+			else if (text.substring(0,keyName.length + 1) != (keyName + ' ')) 
+				return '';
+		}
+	}
+
+	return text.split(' ',1)[0];
+}
+
 function parseText(id, name, text, keyControl, key) {
 	if (id == 'id')
 		return text;
@@ -74,6 +107,13 @@ export function loadFile(name, file, keyControl, key, callback) {
 		  keyControl.push('*');
 	  }
 
+      const rows_header = tsvParseRows(data)
+        .map(([id, text, count]) => ({
+          id: 'H'+id,
+          text: parseTextHeader(id, name, text, keyControl, key),
+          count: +cleanCount(count*10)
+        }));
+
       const rows = tsvParseRows(data)
         .map(([id, text, count]) => ({
           id,
@@ -81,7 +121,7 @@ export function loadFile(name, file, keyControl, key, callback) {
           count: +cleanCount(count)
         }));
 
-      callback(error, rows);
+        callback(error, rows.slice(0,1).concat(rows_header).concat(rows.slice(1)));
     });
   }
 }

@@ -134,13 +134,23 @@ class App extends React.Component {
   }
 
   changeLangsKey(value) {
+    let first_filter = this.state.langs[value].id;
+    if (this.state.langs[value].id == 'en') {
+        first_filter = first_filter + ' ru'; 
+    } else {
+        first_filter = first_filter + ' en';
+    }
+    let cur_pair_array = this.state.pairLangs.filter((data) => data.id.substring(0,2) == value).map((data) => data.id);
+    let pair_index = cur_pair_array.indexOf(first_filter);
+
     this.setState({
       selectedNode: null,
       renderedGraphs: [],
 	  //keyControl: [],
 	  langsKey: value,
+      pairLangsKey: pair_index,
     });
-    let first_filter = this.state.langs[value].id + ' ' + this.state.langs[value].id;
+    
 	if (this.state.entity == null)
 		this.loadFile(
                 first_filter, 
