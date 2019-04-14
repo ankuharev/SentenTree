@@ -165,20 +165,30 @@ class App extends React.Component {
   }
 
   changePairLangsKey(value) {
+    let condence_menu = this.state.pairLangs
+                            .filter((data) => 
+                                data.id.substring(0,2) == this.state.langs[this.state.langsKey].id
+                                )
+                            .map((data) => data.id);
+    let menu_item = condence_menu[value];
+    let all_menu_items = this.state.pairLangs
+                            .map((data) => data.id);
+    let menuValue = all_menu_items.indexOf(menu_item);
+      
     this.setState({
       selectedNode: null,
       renderedGraphs: [],
 	  //keyControl: [],
-	  langsKey: value,
+	  pairLangsKey: value, //menuValue,
     });
 	if (this.state.entity == null)
 		this.loadFile(
-                this.state.pairLangs[value].id, 
+                menu_item, //this.state.pairLangs[value].id, 
                 DATASETS[this.state.dataset].file, 
                 this.state.key);
 	else
 		this.loadFileAccentEntity(
-                this.state.pairLangs[value].id, 
+                menu_item, //this.state.pairLangs[value].id, 
                 DATASETS[this.state.dataset].file,
                 this.state.entity, 
                 this.state.key);
@@ -282,26 +292,39 @@ class App extends React.Component {
   renderSelectedNode() {
     const { selectedNode: node, nodeX, nodeY } = this.state;
     if (node) {
-      return (
-        <div
-          className="popover-content"
-          style={{
-            top: `${nodeY + 10}px`,
-            left: `${nodeX + 100}px`,
-          }}
-        >
-          <div className="popover-inner">
-            {node.data.topEntries.slice(0, node.data.topEntries.length).map(entry =>
-              <div key={entry.id} className="mock-tweet">
-                <div className="word-count">
-                  id {entry.id}
-                </div>
-                {entry.rawText}
+      if (node.leftLinks.length == 0) {
+          return (
+            <div
+              className="popover-content"
+              style={{
+                top: `${nodeY + 10}px`,
+                left: `${nodeX + 100}px`,
+              }}
+            >
+              <div className="popover-inner">
+                        Click to download
               </div>
-            )}
-          </div>
-        </div>
-      );
+            </div>
+          );
+      } else {
+          return (
+            <div
+              className="popover-content"
+              style={{
+                top: `${nodeY + 10}px`,
+                left: `${nodeX + 100}px`,
+              }}
+            >
+                <div className="popover-inner">
+                {node.data.topEntries.slice(0, node.data.topEntries.length).map(entry =>
+                  <div key={entry.id} className="mock-tweet">
+                    {entry.rawText}
+                  </div>
+                )}
+                </div>
+            </div>
+          );
+      }
     }
     return null;
   }

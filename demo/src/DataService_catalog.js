@@ -13,9 +13,10 @@ function parseTextHeader(id, name, text, keyControl, key) {
 	
 	if (name.length == 5 && isNaN(id)){
         let learn = name.substring(0,2).toLowerCase();
-        let nativ = name.substring(3).toLowerCase();
+        //let nativ = name.substring(3).toLowerCase();
         let pref = id.substring(0,2).toLowerCase();
-        if (!(learn == pref || nativ == pref))
+        if (!(learn == pref)) // || nativ == pref))
+        //if (!(learn == pref || nativ == pref))
             return '';
     }
 
@@ -40,7 +41,7 @@ function parseTextHeader(id, name, text, keyControl, key) {
 	return text.split(' ',1)[0];
 }
 
-function parseText(id, name, text, keyControl, key) {
+function parseText(id, name, text, keyControl, key, headers) {
 	if (id == 'id')
 		return text;
 	
@@ -52,6 +53,10 @@ function parseText(id, name, text, keyControl, key) {
             return '';
     }
 
+    let header = text.split(' ',1)[0];
+    if (headers.indexOf(header) == -1)
+            return '';
+    
 	if (!isNaN(key)) {
 		if (key == 0) {
 			let spacePosition = text.indexOf(' ');
@@ -111,15 +116,21 @@ export function loadFile(name, file, keyControl, key, callback) {
         .map(([id, text, count]) => ({
           id: 'H'+id,
           text: parseTextHeader(id, name, text, keyControl, key),
-          count: +cleanCount(count*10)
-        }));
+          count: +cleanCount(count*20)
+        }))
+        .filter((data) => data.text.length > 0);
 
+      const headers = rows_header
+        .map((data) => data.text)
+        .filter((value, index, self) => self.indexOf(value) === index);
+      
       const rows = tsvParseRows(data)
         .map(([id, text, count]) => ({
           id,
-          text: parseText(id, name, text, keyControl, key),
+          text: parseText(id, name, text, keyControl, key, headers),
           count: +cleanCount(count)
-        }));
+        }))
+        .filter((data) => data.text.length > 0);
 
         callback(error, rows.slice(0,1).concat(rows_header).concat(rows.slice(1)));
     });
