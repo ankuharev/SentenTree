@@ -1,0 +1,131 @@
+﻿Get-Date
+
+$file_at = "pricestat_access.token"
+$file_rt = "pricestat_refresh.token"
+
+$request_auth = "https://api.pricestat.ru/api/auth"
+$request_refresh = "https://api.pricestat.ru/api/token"
+$request_get  = "https://api.pricestat.ru/api/v2/export/advert?from=2019-01-01_00:00:00"
+$request_get  = $request_get.Replace(" ","_")
+$request_get_next  = "https://api.pricestat.ru/api/v2/export/advert?from="
+
+function get_login_tokens() {
+    Begin{  
+        $user = "autostat-export@pricestat.ru"
+        $pass = "qwfhbr7989qwdvuhGHJK8wd9f8hhaF21390409328__"
+        $headers = @{ Authorization = "Basic "+[System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes("${user}:${pass}")) }
+    }  
+    Process{  
+        try {
+            $tokens = ((Invoke-WebRequest -uri $request_auth -Headers $headers).Content | ConvertFrom-Json)
+
+            $at = $tokens.access_token
+            $at | Set-Content -Path $file_at
+
+            $rt = $tokens.refresh_token
+            $rt | Set-Content -Path $file_rt
+        } catch {
+            $err_message = "error_get_login_tokens"
+            Write-Host "================================================== $err_message"
+        }
+
+        return $at
+    }
+}
+
+function refresh_tokens() {
+    $headers = @{Authorization="Bearer "+(Get-Content -Path $file_rt)}
+
+    try {
+        $tokens = ((Invoke-WebRequest -Uri $request_refresh -Header $headers).Content | ConvertFrom-Json)
+
+        $at = $tokens.access_token
+        $at | Set-Content -Path $file_at
+
+        $rt = $tokens.refresh_token
+        $rt | Set-Content -Path $file_rt
+    } catch {
+        $err_message = "error_refresh_tokens"
+        Write-Host "================================================== $err_message"
+    }
+
+    return $at
+}
+
+function refresh_access() {
+    $headers = @{Authorization="Bearer "+(Get-Content -Path $file_rt)}
+    try {
+        $refresh_result = Invoke-WebRequest -Uri $request_refresh -Header $headers
+
+        if(($refresh_result -eq $null) -or ($refresh_result.Length -eq 0)) {
+            $at = get_login_tokens
+        } else {
+            $tokens = ($refresh_result.Content | ConvertFrom-Json)
+
+            $at = $tokens.access_token
+            $at | Set-Content -Path $file_at
+
+            $rt = $tokens.refresh_token
+            $rt | Set-Content -Path $file_rt
+        }
+    } catch {
+        $err_message = "error_refresh_access"
+        Write-Host "================================================== $err_message"
+    }
+
+    return $at
+}
+
+$headers = @{Authorization="Bearer "+(get_login_tokens)}
+
+do{  
+    $ok = 1
+    try {
+        $result = Invoke-WebRequest -Uri $request_get -Header $headers
+    } catch {
+        $ok = 0
+        $err_message = "error_start_after_refresh"
+        Write-Host "================================================== $err_message"
+    }
+    if ($ok -eq 0) {
+        $ok = 1
+        $at = get_login_tokens
+        $headers = @{Authorization="Bearer $at"}
+        try {
+            $result = Invoke-WebRequest -Uri $request_get -Header $headers
+        } catch {
+            $ok = 0
+            $err_message = "error_start_get_login_tokens"
+            Write-Host "================================================== $err_message"
+        }
+        if ($ok -eq 0) {
+            break
+        }
+    }
+
+    $content_result = ($result.content | ConvertFrom-Json).adverts
+
+    if($result.StatusCode -eq "200") {
+        Write-Host "==> "$request_get
+        if ($content_result.Count -gt 1) {
+            Write-Host "                                                      :" $content_result[$content_result.Count-1].date":"$content_result[0].date
+        } else {
+        if ($content_result.Count -eq 1) {
+            Write-Host "                                                      :"$content_result[0].date
+        }}
+
+    }
+
+    $last_date = $content_result.Item($content_result.Count-1).date
+    $next_date = $last_date.Replace(" ","_")
+    $request_get = $request_get_next+$next_date
+    #Start-Sleep 100
+    if ($content_result.Count -eq 1) {
+        break
+    }
+} while($content_result.Count -gt 0) 
+
+del $file_at
+del $file_rt
+Get-Date
+
