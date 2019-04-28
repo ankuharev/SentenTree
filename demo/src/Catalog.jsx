@@ -343,7 +343,10 @@ class App extends React.Component {
       <div className={classes.join(' ')}>
         <div className="container">
           <p>
-			Click to get together all modification with selected key.
+			Click to get together all modification with selected key...
+          </p>
+          <p>
+            <a href='/somefile.txt' download>Click to download</a>
           </p>
           <select
             className="form-control"
