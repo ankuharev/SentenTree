@@ -4803,7 +4803,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar DATASETS = exports.DATASETS = [{\n  name: 'Subtitles Catalog',\n  file: 'catalog_pub.tsv'\n}, {\n  name: 'Friends',\n  file: 'Friends.tsv'\n}];\n\n//////////////////\n// WEBPACK FOOTER\n// ./demo/src/datasets_catalog.js\n// module id = 685\n// module chunks = 1\n\n//# sourceURL=webpack:///./demo/src/datasets_catalog.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar DATASETS = exports.DATASETS = [{\n  name: 'Mad Men',\n  file: 'Mad Men.tsv'\n}, {\n  name: 'Breaking Bad',\n  file: 'Breaking Bad.tsv'\n}, {\n  name: 'Friends',\n  file: 'Friends.tsv'\n}, {\n  name: 'Subtitles Catalog',\n  file: 'catalog_pub.tsv'\n}];\n\n//////////////////\n// WEBPACK FOOTER\n// ./demo/src/datasets_catalog.js\n// module id = 685\n// module chunks = 1\n\n//# sourceURL=webpack:///./demo/src/datasets_catalog.js?");
 
 /***/ }),
 /* 686 */,
